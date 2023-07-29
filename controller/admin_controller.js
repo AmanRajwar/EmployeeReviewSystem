@@ -81,16 +81,18 @@ module.exports.assign = async (req, res) => {
         if (!employee) {
             return res.redirect('back');
         }
-        
+
         const performanceId = req.query.id;
-        
+
         if (!employee.performanceReview.includes(performanceId)) {
             // If performance._id does not exist in employee.performanceReview, then update it
             const performance = await PerformanceReview.findById(performanceId);
-performance.assignedTo.push(employee._id);
-            employee.performanceReview.push(performance._id);
-            performance.save();
-            employee.save();
+            if (performance.employee != employee._id) {
+                performance.assignedTo.push(employee._id);
+                employee.performanceReview.push(performance._id);
+                performance.save();
+                employee.save();
+            }
         }
 
         return res.redirect('back');
