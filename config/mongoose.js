@@ -11,8 +11,10 @@
 const mongoose = require('mongoose');
 
 const connectionOptions = {
+  useCreateIndex:true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useFindAndModify:false
 };
 
 
