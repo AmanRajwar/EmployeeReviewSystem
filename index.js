@@ -38,7 +38,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: 'mongodb://127.0.0.1/employee_review',
+        mongoUrl: process.env.MONGODB_URI,
         ttl: 14 * 24 * 60 * 60,
         autoRemove: 'disabled'
     })
