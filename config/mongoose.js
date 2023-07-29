@@ -28,3 +28,4 @@ db.once('open', () => {
   console.log('Successfully connected to the database');
 });
 
+module.exports =db;
