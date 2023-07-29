@@ -10,17 +10,15 @@
 
 const mongoose = require('mongoose');
 
-const connectionOptions = {
-  useCreateIndex:true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify:false
-};
+// const connectionOptions = {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// };
 
 
 const dbURI = process.env.MONGODB_URI;
 
-mongoose.connect(dbURI, connectionOptions);
+mongoose.connect(dbURI);
 
 const db = mongoose.connection;
 
