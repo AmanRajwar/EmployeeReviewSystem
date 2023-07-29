@@ -33,7 +33,7 @@ module.exports.feedback= async (req,res)=>{
             reviewer:req.user._id,
             performanceReview:req.query.id
         })
-        if(feedback.length===0){
+        if(!feedback){
             console.log("NO feedback Yet!!");
             return res.status(201).json({message:"NO feedback Yet!!"})
         }
