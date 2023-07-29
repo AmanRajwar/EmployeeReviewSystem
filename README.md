@@ -25,9 +25,9 @@ PASSWORD ---> password
 2) Can only see those performance reviewes in which employee is assigned.
 
 
-<-------Screenshots------->
+# Screenshots------->
 
-* ADMIN
+~ ADMIN
 
 on click --->create review will be visible
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/103bc888-2aae-43a1-9c07-fd368db2efa7)
