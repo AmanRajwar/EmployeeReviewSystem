@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/performance.css">
+
+<div id="wrapper">
+    <div>
+        <h1>Performance Review</h1>
+    </div>
+    <ul id="review-list">
+        <% for (const performance of performances) { %>
+        <li class="review" id="<%= performance._id %>">
+          <div class="container">
+            <div class="review-container" data-performance-id="<%= performance._id %>">
+              <span class="inline">
+                <h2>Title:</h2>
+                <h4 class="title"><%= performance.title %></h4>
+              </span>
+              <span class="inline">
+                <h2>For(Employee):</h2>
+                <h4><%= performance.employee.name %></h4>
+              </span>
+              <span class="inline">
+                <button type="button" class="btn btn-primary update-btn">Update</button>
+              </span>
+            </div>
+            <span class="inline">
+              <h2>Description:</h2>
+              <h4 class="description"><%= performance.description %></h4>
+            </span>
+            <span class="inline">
+              <form class="performance-form" action="/admin/assign-to?id=<%= performance._id%>" method="post">
+                <div class="row">
+                  <h2>Assign to :</h2>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Enter email">
+                  </div>
+                  <!-- <input type="hidden" name="performanceId" value="<%= performance._id %>"> -->
+                  <input type="submit" class="btn btn-primary" value="Create">
+                </div>
+              </form>
+            </span>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+      
+</div>
+<script src="/scripts/performance.js"></script>
