@@ -11,7 +11,7 @@ PASSWORD ---> password
  visit for testing ---> https://employee-review-upwp.onrender.com/
 
 
-<-------Features For ADMIN-------->
+# Features For ADMIN -------->
 
  1) Make any employee Admin.
  2) Make a performance review for any employee.
@@ -19,7 +19,7 @@ PASSWORD ---> password
  4) Update any performance review.
 
 
-<------Features for Employee------->
+# Features for Employee ------->
 
 1) Can add Feadbacks to performance reviews in which employee is assigned.
 2) Can only see those performance reviewes in which employee is assigned.
@@ -27,7 +27,7 @@ PASSWORD ---> password
 
 # Screenshots------->
 
-~ ADMIN
+* ADMIN
 
 on click --->create review will be visible
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/103bc888-2aae-43a1-9c07-fd368db2efa7)
