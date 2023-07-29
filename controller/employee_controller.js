@@ -47,15 +47,15 @@ module.exports.feedback= async (req,res)=>{
 
 module.exports.createFeedback= async (req,res)=>{
     try {
-        console.log(req.body);
         const feedback= await Feedback.create({
             reviewer:req.user._id,
             performanceReview:req.query.id,
             feedbackText:req.body.feedbackText
         })
-        return res.status(201).json(feedback)
+        
+        return res.redirect('back');
     } catch (error) {
         console.log("Error in create feedback controller ===>",error);
-        return res.status(500).json({error:"NO feedback Yet!!"});
+       return res.redirect('back');
     }
 }
