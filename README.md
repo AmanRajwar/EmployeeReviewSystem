@@ -27,7 +27,7 @@ PASSWORD ---> password
 
 <-------Screenshots------->
 
-*ADMIN
+* ADMIN
 
 on click --->create review will be visible
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/103bc888-2aae-43a1-9c07-fd368db2efa7)
@@ -43,7 +43,7 @@ on click ---> if there is no feedback then
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/042993cd-e96b-4382-92df-29f1d1a8eee5)
 
 
-*Employee
+* Employee
 
 On click ---> if you have already submited the feedback
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/3b06babf-cf53-4dee-a470-3ec9b05372d4)
@@ -54,5 +54,5 @@ On click ---> if Feedback is not submited
 ![image](https://github.com/AmanRajwar/EmployeeReviewSystem/assets/135263136/7458090d-4948-427e-a8c0-580092ecffdf)
 
 
-#Thanks for visiting 
+# Thanks for visiting 
 
