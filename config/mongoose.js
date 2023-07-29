@@ -16,7 +16,7 @@ const connectionOptions = {
 };
 
 
-const dbURI = 'mongodb+srv://czarop79:czarop79@cluster0.qyz2iwp.mongodb.net/employee_review?retryWrites=true&w=majority';
+const dbURI = process.env.MONGODB_URI;
 
 mongoose.connect(dbURI, connectionOptions);
 
