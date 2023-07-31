@@ -2,13 +2,13 @@
 
 To login as an ADMIN
 
-EMAIL---> admin@gmail.com
-PASSWORD ---> password
+* EMAIL---> admin@gmail.com
+* PASSWORD ---> password
 
 To login as Employee
 
-EMAIL---> emp3@gmail.com
-PASSWORD ---> password
+* EMAIL---> emp3@gmail.com
+* PASSWORD ---> password
 
  visit for testing ---> https://employee-review-upwp.onrender.com/
 
