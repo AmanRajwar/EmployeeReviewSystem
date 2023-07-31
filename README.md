@@ -1,10 +1,12 @@
 # EmployeeReviewSystem
 
 To login as an ADMIN
+
 EMAIL---> admin@gmail.com
 PASSWORD ---> password
 
 To login as Employee
+
 EMAIL---> emp3@gmail.com
 PASSWORD ---> password
 
