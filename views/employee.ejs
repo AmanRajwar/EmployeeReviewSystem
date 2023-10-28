@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/performance.css">
+
+<div id="wrapper">
+    <div>
+        <h1> Performances Review</h1>
+    </div>
+    <ul id="review-list">
+        <% for (const review of performances.performanceReview) { %>
+        <li class="review" id="<%= review._id %>">
+          <div class="container">
+            <div class="review-container" data-review-id="<%= review._id %>">
+              <span class="inline">
+                <h2>Title:</h2>
+                <h4 class="title"><%= review.title %></h4>
+              </span>
+              <span class="inline">
+                <h2>For(Employee):</h2>
+                <h4><%=review.employee.name %></h4>
+              </span>
+            </div>
+            <span class="inline">
+              <h2>Description:</h2>
+              <h4 class="description"><%= review.description %></h4>
+            </span>
+          </div>
+        </li>
+        <% } %>
+      </ul>
+      
+</div>
+<script src="/scripts/employee.js"></script>
